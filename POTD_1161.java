@@ -1,14 +1,14 @@
 import java.util.*;
 class Pair{
-    TreeNode node;
+    POTD_1161 node;
     int level;
-    public Pair(TreeNode node,int level){
+    public Pair(POTD_1161 node,int level){
         this.node=node;
         this.level=level;
     }
  }
 class Solution {
-    public int maxLevelSum(TreeNode root) {
+    public int maxLevelSum(POTD_1161 root) {
         int min=Integer.MIN_VALUE;int ans=-1;
         Queue<Pair>q=new LinkedList<>();
         q.add(new Pair(root,1));
@@ -17,7 +17,7 @@ class Solution {
             int sum=0;int curr=0;
             for(int i=0;i<n;i++){
                  Pair p=q.poll();
-                 TreeNode node=p.node;
+                 POTD_1161 node=p.node;
                  int level=p.level;
                  sum+=node.val;
                  curr=level;
@@ -40,13 +40,13 @@ class Solution {
 
 
   
-  public class TreeNode {
+  public class POTD_1161 {
       int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode() {}
-      TreeNode(int val) { this.val = val; }
-   TreeNode(int val, TreeNode left, TreeNode right) {
+      POTD_1161 left;
+      POTD_1161 right;
+      POTD_1161() {}
+      POTD_1161(int val) { this.val = val; }
+   POTD_1161(int val, POTD_1161 left, POTD_1161 right) {
         this.val = val;
        this.left = left;
          this.right = right;
