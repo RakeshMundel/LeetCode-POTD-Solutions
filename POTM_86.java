@@ -1,4 +1,4 @@
-class POTD_865 {
+class POTD_85 {
     public int maximalRectangle(char[][] matrix) {
         int n=matrix.length;
         int m=matrix[0].length;
